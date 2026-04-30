@@ -1,4 +1,4 @@
-package com.zigwheels.page;
+package com.zigwheels.pages;
 
 public class UsedCarsPage {
 }
