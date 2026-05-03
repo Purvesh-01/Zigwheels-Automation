@@ -20,7 +20,7 @@ public class HomePage extends BasePage {
 
     // Open zigwheels home page
     public void openHomePage() {
-        navigateTo(ConfigReader.getProperty("baseUrl"));
+        driver.get(ConfigReader.getProperty("baseUrl"));
         System.out.println("[INFO] Opened Home Page");
     }
 
@@ -32,8 +32,5 @@ public class HomePage extends BasePage {
         pause(2000);
         System.out.println("[INFO] Navigated to Upcoming Bikes page");
     }
-
-
-
 
 }

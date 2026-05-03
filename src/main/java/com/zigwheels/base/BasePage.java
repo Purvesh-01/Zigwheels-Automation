@@ -21,48 +21,42 @@ public class BasePage {
         wait=new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     //click
-    protected void click(By locator) {
+    public void click(By locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
     // JavaScript click — bypasses overlays/popups
-    protected void jsClick(By locator) {
+    public void jsClick(By locator) {
         WebElement el = driver.findElement(locator);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
 
     // Hover over element
-    protected void hover(By locator) {
+    public void hover(By locator) {
         WebElement el = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(locator));
         new Actions(driver).moveToElement(el).perform();
     }
 
     // Type text
-    protected void type(By locator, String text) {
+    public void type(By locator, String text) {
         wait.until(ExpectedConditions
                 .visibilityOfElementLocated(locator)).sendKeys(text);
     }
 
     // Get text
-    protected String getText(By locator) {
+    public String getText(By locator) {
         return wait.until(ExpectedConditions
                 .visibilityOfElementLocated(locator)).getText();
     }
 
     // Scroll element into view
-    protected void scrollIntoView(WebElement element) {
+    public void scrollIntoView(WebElement element) {
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    // Navigate to URL
-    protected void navigateTo(String url) {
-        driver.get(url);
-    }
-
-    // Pause — use only when necessary
-    protected void pause(int milliseconds) {
+    public void pause(int milliseconds) {
         try { Thread.sleep(milliseconds); } catch (Exception e) {}
     }
 

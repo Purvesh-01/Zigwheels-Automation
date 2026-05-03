@@ -31,7 +31,8 @@ public class UsedCarsTest extends BaseTest {
         Actions action = new Actions(driver);
         WebElement more = driver.findElement(By.xpath(ConfigReader.getProperty("moreBtn.xpath")));
         action.moveToElement(more).perform();
-        driver.findElement(By.xpath(ConfigReader.getProperty("usedCars.xpath"))).click();
+        WebElement usedcars = driver.findElement(By.xpath(ConfigReader.getProperty("usedCars.xpath")));
+        usedcars.click();
         String usedCarUrl = driver.getCurrentUrl();
         Assert.assertEquals(usedCarUrl, ConfigReader.getProperty("usedCars.url"));
     }
@@ -44,11 +45,7 @@ public class UsedCarsTest extends BaseTest {
         WebElement cityPopup = driver.findElement(By.id("city-popup"));
         wait.until(ExpectedConditions.visibilityOf(cityPopup));
 
-        WebElement chennaiLink = driver.findElement(
-                By.xpath(ConfigReader.getProperty("chennai.usedCars.xpath"))
-        );
-
-        chennaiLink.click();
+        basePage.jsClick(By.xpath(ConfigReader.getProperty("chennai.usedCars.xpath")));
 
         // Assert URL now contains "Chennai"
         wait.until(ExpectedConditions.urlContains("Chennai"));

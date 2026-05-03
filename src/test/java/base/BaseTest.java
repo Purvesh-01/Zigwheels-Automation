@@ -1,5 +1,6 @@
 package base;
 
+import com.zigwheels.base.BasePage;
 import com.zigwheels.utils.ConfigReader;
 import com.zigwheels.utils.ExtentReportManager;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +13,7 @@ import java.time.Duration;
 public class BaseTest {
 
     protected WebDriver driver;
-
+    protected BasePage basePage;
     // Runs ONCE before all tests — set up report
     @BeforeSuite
     public void setUpReport() {
@@ -25,8 +26,8 @@ public class BaseTest {
         // Block notification popup
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-
         driver = new ChromeDriver(options);
+        basePage = new BasePage(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(ConfigReader.getProperty("baseUrl"));
