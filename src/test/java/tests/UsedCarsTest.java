@@ -1,4 +1,5 @@
-package test;
+package tests;
+
 
 import base.BaseTest;
 import com.zigwheels.utils.ConfigReader;

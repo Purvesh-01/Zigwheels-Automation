@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-30T14:54:17 IST" name="Default Suite" finished-at="2026-04-30T14:54:42 IST" duration-ms="24181">
+    <groups>
+    </groups>
+    <test started-at="2026-04-30T14:54:17 IST" name="Zigwheels-Automation" finished-at="2026-04-30T14:54:42 IST" duration-ms="24181">
+      <class name="tests.HondaBikesTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:17 IST" name="setUpReport" finished-at="2026-04-30T14:54:17 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:17 IST" name="setUp" finished-at="2026-04-30T14:54:22 IST" duration-ms="4297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateAndFilter()[pri:0, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:22 IST" name="navigateAndFilter" finished-at="2026-04-30T14:54:32 IST" depends-on-methods="base.BaseTest.setUp" duration-ms="9963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateAndFilter -->
+        <test-method signature="tc01_verifyUpcomingBikesPageOpens()[pri:1, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:32 IST" name="tc01_verifyUpcomingBikesPageOpens" finished-at="2026-04-30T14:54:32 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_verifyUpcomingBikesPageOpens -->
+        <test-method signature="tc02_verifyHondaFilterApplied()[pri:2, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:32 IST" name="tc02_verifyHondaFilterApplied" finished-at="2026-04-30T14:54:32 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_verifyHondaFilterApplied -->
+        <test-method signature="tc03_verifyBikesUnder4LacDisplayed()[pri:3, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:32 IST" name="tc03_verifyBikesUnder4LacDisplayed" finished-at="2026-04-30T14:54:34 IST" duration-ms="1986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_verifyBikesUnder4LacDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:34 IST" name="tearDown" finished-at="2026-04-30T14:54:42 IST" duration-ms="7830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="saveReport()[pri:0, instance:tests.HondaBikesTest@55fe41ea]" started-at="2026-04-30T14:54:42 IST" name="saveReport" finished-at="2026-04-30T14:54:42 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveReport -->
+      </class> <!-- tests.HondaBikesTest -->
+    </test> <!-- Zigwheels-Automation -->
+  </suite> <!-- Default Suite -->
+</testng-results>
